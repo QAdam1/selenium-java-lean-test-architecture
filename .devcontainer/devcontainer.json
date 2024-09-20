@@ -1,17 +1,7 @@
 {
-    "name": "Java 22 DevContainer",
-    "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu-22.04",  
-    "postCreateCommand": "curl -s https://get.sdkman.io | bash && bash -c 'source /root/.sdkman/bin/sdkman-init.sh && sdk install java 22.0.0-zulu'",
-    "settings": {
-        "java.home": "/root/.sdkman/candidates/java/current"
-    },
+    "name": "Java DevContainer",
+    "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu-22.04",
     "extensions": [
         "vscjava.vscode-java-pack"
-    ],
-    "remoteEnv": {
-        "SDKMAN_DIR": "/root/.sdkman",
-        "JAVA_HOME": "/root/.sdkman/candidates/java/current",
-        "PATH": "/root/.sdkman/candidates/java/current/bin:${PATH}"
-    },
-    "remoteUser": "vscode"
+    ]
 }
