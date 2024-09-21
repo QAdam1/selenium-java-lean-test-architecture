@@ -1,6 +1,6 @@
 {
   "name": "Java 22 Development Environment",
-  "image": "mcr.microsoft.com/devcontainers/java:22", 
+  "image": "openjdk:22-jdk", 
   "features": {
     "ghcr.io/devcontainers/features/maven:1": {}
   },
